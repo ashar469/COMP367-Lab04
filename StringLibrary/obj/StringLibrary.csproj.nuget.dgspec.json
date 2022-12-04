@@ -22,7 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ashrut05/f3faf849-abdc-4684-8922-8de62bf38170/_packaging/ClassLibrary_Feed/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -39,6 +40,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

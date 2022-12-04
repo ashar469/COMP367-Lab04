@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "StringLibrary/1.0.0": {
+      "ShowCase/1.0.0": {
         "dependencies": {
-          "NUnit": "3.13.3"
+          "StringLibrary": "1.0.0"
         },
         "runtime": {
-          "StringLibrary.dll": {}
+          "ShowCase.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -30,11 +30,19 @@
             "fileVersion": "3.13.3.0"
           }
         }
+      },
+      "StringLibrary/1.0.0": {
+        "dependencies": {
+          "NUnit": "3.13.3"
+        },
+        "runtime": {
+          "StringLibrary.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "StringLibrary/1.0.0": {
+    "ShowCase/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -59,6 +67,11 @@
       "sha512": "sha512-KNPDpls6EfHwC3+nnA67fh5wpxeLb3VLFAfLxrug6JMYDLHH6InaQIWR7Sc3y75d/9IKzMksH/gi08W7XWbmnQ==",
       "path": "nunit/3.13.3",
       "hashPath": "nunit.3.13.3.nupkg.sha512"
+    },
+    "StringLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

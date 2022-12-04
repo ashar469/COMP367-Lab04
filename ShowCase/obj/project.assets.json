@@ -23,7 +23,7 @@
           "lib/netstandard1.0/_._": {}
         },
         "build": {
-          "build/netstandard2.0/NETStandard.Library.targets": {}
+          "build/netstandard2.0/_._": {}
         }
       },
       "NUnit/3.13.3": {
@@ -42,7 +42,20 @@
           }
         },
         "build": {
-          "build/NUnit.props": {}
+          "build/_._": {}
+        }
+      },
+      "StringLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "NUnit": "3.13.3"
+        },
+        "compile": {
+          "bin/placeholder/StringLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StringLibrary.dll": {}
         }
       }
     }
@@ -216,11 +229,16 @@
         "nunit.3.13.3.nupkg.sha512",
         "nunit.nuspec"
       ]
+    },
+    "StringLibrary/1.0.0": {
+      "type": "project",
+      "path": "../StringLibrary/StringLibrary.csproj",
+      "msbuildProject": "../StringLibrary/StringLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "NUnit >= 3.13.3"
+      "StringLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -229,11 +247,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Centennial\\Fall 2022\\COMP367-402 DevOps Implementation\\Lab#4\\ClassLibraryProjects\\StringLibrary\\StringLibrary.csproj",
-      "projectName": "StringLibrary",
-      "projectPath": "D:\\Centennial\\Fall 2022\\COMP367-402 DevOps Implementation\\Lab#4\\ClassLibraryProjects\\StringLibrary\\StringLibrary.csproj",
+      "projectUniqueName": "D:\\Centennial\\Fall 2022\\COMP367-402 DevOps Implementation\\Lab#4\\ClassLibraryProjects\\ShowCase\\ShowCase.csproj",
+      "projectName": "ShowCase",
+      "projectPath": "D:\\Centennial\\Fall 2022\\COMP367-402 DevOps Implementation\\Lab#4\\ClassLibraryProjects\\ShowCase\\ShowCase.csproj",
       "packagesPath": "C:\\Users\\hitec\\.nuget\\packages\\",
-      "outputPath": "D:\\Centennial\\Fall 2022\\COMP367-402 DevOps Implementation\\Lab#4\\ClassLibraryProjects\\StringLibrary\\obj\\",
+      "outputPath": "D:\\Centennial\\Fall 2022\\COMP367-402 DevOps Implementation\\Lab#4\\ClassLibraryProjects\\ShowCase\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hitec\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -250,7 +268,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Centennial\\Fall 2022\\COMP367-402 DevOps Implementation\\Lab#4\\ClassLibraryProjects\\StringLibrary\\StringLibrary.csproj": {
+              "projectPath": "D:\\Centennial\\Fall 2022\\COMP367-402 DevOps Implementation\\Lab#4\\ClassLibraryProjects\\StringLibrary\\StringLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -262,12 +284,6 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
-        "dependencies": {
-          "NUnit": {
-            "target": "Package",
-            "version": "[3.13.3, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
